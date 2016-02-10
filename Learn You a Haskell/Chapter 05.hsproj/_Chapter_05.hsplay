@@ -41,11 +41,14 @@ applyTwice (++ " LOL") "Hey"
 applyTwice ("LOL " ++) "Hey"
 applyTwice (5 +) 1
 
+applyThrice (+1) 0
+
 zipWith' (+) [0..4] [5..9]
 --5, 7, 9, 11, 13
 zipWith' max [6,3,2,1] [7,3,1,5]
 zipWith' (*) (replicate 5 2) [1..]
 --[2, 4, 6, 8, 10]
+zipWith' (+) [1,2,3] [1,2,3]
 
 
 flip' (-) 8 5
@@ -56,6 +59,7 @@ zipWith' div [2,2..] [10,8..2]
 zipWith' (flip' subtract) [2,2..] [10,8..2]
 
 
+filter' (>3) [0..10]
 
 --THE FUNCTIONAL PROGRAMMER'S TOOLBOX
 map (*2) [1..5]
@@ -109,3 +113,16 @@ maximum' [11,6,4,77,5,34,7,543,7,0]
 reverse' [1..10]
 
 last' [1..10]
+
+filter' (even) [20..40]
+
+
+sqrtSums
+
+
+negate_list [[1..4],[5..9]]
+
+sum (replicate 5 (max 6.7 8.9))
+sum . replicate 5 $ max 6.7 8.9
+
+sumOddSquares'

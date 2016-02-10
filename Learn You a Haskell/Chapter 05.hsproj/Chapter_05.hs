@@ -21,6 +21,9 @@ isUpper = (`elem` ['A'..'Z'])
 applyTwice :: (a -> a) -> a -> a
 applyTwice f x = f(f x)
 
+applyThrice :: (a -> a) -> a -> a
+applyThrice f x = f (f (f x))
+
 
 zipWith' :: (a -> b -> c) -> [a] -> [b] -> [c]
 zipWith' _ [] _ = []
@@ -32,6 +35,12 @@ zipWith' f (x:xs) (y:ys) = f x y : zipWith' f xs ys
 flip' :: (a -> b -> c) -> (b -> a -> c)
 flip' f x y = f y x
 
+
+filter' :: (a -> Bool) -> [a] -> [a]
+filter' _ [] = []
+filter' f (x:xs) | (f x == True) = x : filter' f xs
+                 | otherwise = filter' f xs
+                 
 
 
 --QUICKSORT WITH FILTERS
@@ -51,8 +60,8 @@ sumDifference a b = (a+b, a-b)
 
 
 --SUM ODD SQUARES < 10,000
-sumOddSquares = sum  (takeWhile (<10000) (filter (odd) (map (^2) [1..])))
-
+--sumOddSquares = sum  (takeWhile (<10000) (filter (odd) (map (^2) [1..])))
+sumOddSquares = sum . takeWhile (<10000) . filter (odd) $ map (^2) [1..]
 
 
 --COLLATZ CHAIN
@@ -107,11 +116,24 @@ product' = foldl1 (*)
 
 
 
-filter' :: (a -> Bool) -> [a] -> [a]
-filter' f = foldr (\x acc -> if f x then x:acc else acc) []
+filter'' :: (a -> Bool) -> [a] -> [a]
+filter'' f = foldr (\x acc -> if f x then x:acc else acc) []
 
 
 last' :: [a] -> a
 last' = foldl1 (\_ x -> x)
 
 
+sqrtSums :: Int
+--sqrtSums = length (takeWhile (<1000) (scanl (+) 0 (map sqrt [1..])))
+sqrtSums = length $ takeWhile (<1000) $ scanl (+) 0 $ map sqrt [1..]
+
+--sqrt (fromIntegral x)
+
+negate_list :: Num a => [[a]] -> [a]
+negate_list = map (negate . sum . tail)
+
+
+
+sumOddSquares' = sum . filter (odd) . takeWhile (<10000) $  map (^2) [1..]
+--sumOddSquares' =  filter odd $ map (^2) [1..]

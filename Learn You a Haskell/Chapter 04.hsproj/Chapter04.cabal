@@ -7,3 +7,5 @@ stability: experimental
 Executable Chapter04
   main-is: Chapter_04.hs
   buildable: True
+  build-depends:
+      base -any
