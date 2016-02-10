@@ -1,0 +1,77 @@
+-- Haskell Playground 1.0
+--BABY'S FIRST FUNCTIONS
+doubleMe 5
+doubleUs 5 10
+
+doubleSmallNumber 5
+doubleSmallNumber 101
+
+doubleSmallNumber' 5
+doubleSmallNumber' 101
+
+
+--INTRO TO LISTS
+'A':" small cat."
+5:[1..5]
+1:2:3:[]
+
+null []
+
+head [1..10]
+tail [1..10]
+init [1..10]
+last [1..10]
+take 3 [1..10]
+drop 3 [1..10]
+
+sum [1..10]
+product [1..10]
+
+4 `elem` [2..20]
+
+--RANGES
+take 10 (cycle [1,2,3])
+take 10 (repeat 5)
+replicate 3 10
+
+
+--LIST COMPREHENSION
+take 10 [2,4..]
+[x*2 | x <- [1..10]]
+[x*3 | x <- [1..10], x*3 >= 12]
+
+[x*2 | x <- [50..100], x `mod` 7 == 3]
+
+boomBangs [7..13]
+
+[x*y | x <- [1..3], y <- [4..6]]
+
+
+[x*y | x <- [2,5,10], y <- [8,10,11], x*y > 50]
+
+
+
+length' [1..10]
+
+removeLowerCase "IdontLIKEFROGS"
+
+
+removeNestedOdds [[1,2,3],[4,5,6],[7,8,9]]
+
+
+
+--TUPLES
+(1,2)
+[(1,2),(3,4)]
+
+fst (1,5)
+
+
+zip [1,2,3,4] [4,3,2,1]
+
+
+zip [1..100] ["hello", "world!"]
+zip [1..] ["hello", "world!"]
+
+
+findTriangle

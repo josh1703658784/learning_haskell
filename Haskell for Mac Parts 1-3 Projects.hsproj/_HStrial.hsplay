@@ -1,0 +1,68 @@
+-- Haskell Playground 1.0
+
+fibList !! 10
+fib 3
+
+factorial 10
+
+
+fizzBuzz [1..100]
+
+unionSets [1..10] [5..15]
+removeDupes [1, 2, 3, 4, 5, 3, 4, 5]
+
+
+
+
+
+
+deductFromAccount 75645 [322, 80000, 5343, 234]
+deductFromAccount 75645 [322, 434, 5343, 234]
+
+
+
+reverse [1..10]
+reverse "hello" 
+
+minList [99, 98, 97, 1, 100, 104]
+
+listSum [2, 4, 4]
+
+natSum 5
+
+Examples.product [1..5]
+
+extractDigits "das43 dffe 23 5 def45"
+
+allToUpper "hello"
+
+allSquares [1..5]
+
+max' 2 1
+max' 50 60
+
+circlearea 5
+
+addMult 5 5
+
+let someList = [2, 4..]
+
+head' [1..10]
+
+sort2 3 5
+sort2 5 3
+
+almostEqual (3, 5) (5, 3)
+
+Examples.isLower 'a'
+
+mangle "Hello"
+
+divide 5 8
+
+findMultiples 10 10
+repeatN 5 9
+
+divide 5 10
+
+suffixes "Hello"

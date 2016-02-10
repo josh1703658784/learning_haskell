@@ -1,0 +1,72 @@
+-- Haskell Playground 1.0
+--TYPE INTRO
+'a'
+5 == 5
+
+circumference 4.0
+circumference' 4.0
+
+(==)
+
+(==) 5 4
+5 == 4
+5 /= 4
+(/=) 5 4
+
+(>)
+
+'b' > 'a'
+5 < 4
+5 `compare` 4
+
+--SHOW
+show 3
+show 3.1415926536
+show True
+
+--READ
+read "3.1415926536" + 1.1
+read "True" || False
+read "[1,2,3]" ++ [4]
+
+(read)
+ 
+
+read "5" :: Int
+read "True" :: Bool
+(read "5.1" :: Float) * 4.2
+read "(3, 'a')" :: (Int, Char)
+read "4" :: Int
+
+[read "True", False, False, True]
+
+
+--ENUM TYPE
+[LT .. GT]
+succ 'B'
+[5..10]
+
+
+--BOUNDED TYPE
+minBound :: Int
+maxBound :: Char
+minBound :: Bool
+(minBound)
+maxBound :: (Bool, Int, Char)
+
+
+--NUM TYPE
+(*)
+5 * 6.0
+--(5 :: Int) * (6 :: Integer)
+
+
+--FLOATING TYPE
+--sin, cos, sqrt, etc. would use this
+
+
+--INTEGRAL TYPE (ie. whole numbers)
+(fromIntegral)  --converts whole numbers (integrals) to more generic numbers type
+fromIntegral (length [1..4]) + 4.2
+
+--main

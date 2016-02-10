@@ -1,0 +1,61 @@
+-- Haskell Playground 1.0
+
+--1
+lastElem [1..5]
+lastElem "Hello"
+
+
+
+--2
+nextLastElem [1..5]
+nextLastElem "Hello"
+
+
+
+--3
+findK' [1..5] 4
+findK' "Hello" 1
+
+
+
+
+
+
+--4
+numElems [1..5]
+numElems "Helloooo"
+
+
+
+
+
+--5
+rev [1..5]
+rev "Helloooo"
+
+
+
+
+--6
+pal "hello"
+pal "racecar"
+pal [1, 2, 3, 3, 2, 1]
+
+
+--7
+
+
+--8
+dupes [1, 1, 2, 3, 4, 5, 6, 6, 6, 7]
+dupes "Helllllo"
+
+
+
+--9
+--pack (a a a a b c c a a d e e e e)
+pack [1, 1, 1, 2, 2, 3, 4, 4]
+
+
+
+
+

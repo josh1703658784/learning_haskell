@@ -1,0 +1,16 @@
+-- Haskell Playground 1.0
+maximum [5,7,3,2,5,7,8,22,0,6,4]
+
+replicate' 5 'W'
+
+take' 5 [1..10]
+
+reverse' [1..10]
+
+repeat' 5
+
+zip' [0..4] ['a'..'z']
+
+elem' [1..200] 201 
+
+quicksort [5,1,9,4,6,7,3]

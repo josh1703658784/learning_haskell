@@ -1,0 +1,21 @@
+-- Haskell Playground 1.0
+sayMe 5
+sayMe (-1)
+
+addVectors (1,2)(3,4)
+
+third (1,2,3)
+
+addList [1..10]
+
+firstLetter "hello"
+
+5 `compare'` 4
+
+initials "Joshua" "Sarver"
+initials' "Joshua" "Sarver"
+
+
+describeList "Hello"
+describeList ""
+describeList "A"

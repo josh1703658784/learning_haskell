@@ -1,0 +1,37 @@
+-- Haskell Playground 1.0
+let aList = [1..100]
+let anotherList = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
+
+--1. find last element in list
+let numOne x = head (reverse x)
+--let numOne xs = [ x <- _:x:s]
+numOne aList
+
+
+--2. Find the last but one element of a list. (next to last)
+let numTwo xs = head (tail (take 2 (reverse xs)))
+numTwo aList
+
+
+--3. Find the K'th element of a list. The first element in the list is number 1.
+let numThree xs k = head (reverse (take k xs))
+numThree aList 10
+
+
+--4. Find the number of elements of a list.
+let numFour xs = sum [1 | _ <- xs]
+numFour aList
+
+
+--5. Reverse a list.
+--let numFive [] = []
+--let numFive (x:xs) = numFive (xs ++ [x])
+--numFive aList
+
+
+--6. Find out whether a list is a palindrome. A palindrome can be read forward or backward
+let numSix xs = (reverse xs) == xs
+numSix "madamimadamx"
+
+
+--

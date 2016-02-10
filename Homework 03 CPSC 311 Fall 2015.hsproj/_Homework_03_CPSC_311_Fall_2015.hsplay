@@ -1,0 +1,9 @@
+-- Haskell Playground 1.0
+
+main
+
+
+binarySearchArray 'E' "ABCDEFGHI"
+
+
+binarySearchArray 5.23 [1.1, 2.2, 5.23]

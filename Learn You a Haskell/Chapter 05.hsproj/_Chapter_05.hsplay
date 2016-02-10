@@ -1,0 +1,111 @@
+-- Haskell Playground 1.0
+--CURRIED FUNCTIONS
+max 4 5
+(max 4) 5
+
+multThree 2 3 1
+(((multThree 2) 3) 1)
+
+
+--take note to the returned type
+multThree
+multThree 3
+multThree 3 3
+multThree 3 3 3
+
+multTwoWithNine 1 2
+
+compareWithHundred 99
+
+
+
+--SECTIONS
+--curried infix functions
+--to do this the infix needs surrounded by parenthesis 
+
+divideByTen 200
+
+isUpper 'a'
+isUpper 'Z'
+
+(`elem` ['A'..'Z'])
+
+
+--watch out for negative numbers
+(-4)
+(subtract 4) 5
+
+
+applyTwice (+3) 10
+applyTwice (++ " LOL") "Hey"
+applyTwice ("LOL " ++) "Hey"
+applyTwice (5 +) 1
+
+zipWith' (+) [0..4] [5..9]
+--5, 7, 9, 11, 13
+zipWith' max [6,3,2,1] [7,3,1,5]
+zipWith' (*) (replicate 5 2) [1..]
+--[2, 4, 6, 8, 10]
+
+
+flip' (-) 8 5
+
+
+flip' zip [1..5] "hello"
+zipWith' div [2,2..] [10,8..2]
+zipWith' (flip' subtract) [2,2..] [10,8..2]
+
+
+
+--THE FUNCTIONAL PROGRAMMER'S TOOLBOX
+map (*2) [1..5]
+map (++ "!") ["BOOM", "BOOM", "POW"]
+
+filter (>4) [0..8]
+quicksort [5,1,9,4,6,7,3]
+filter even [1..10]
+filter odd [1..10]
+
+filter (`elem` ['a'..'z']) "u LaUgH aT mE BeCaUsE I aM diFfeRent"
+
+--filter and list comprehensions are the same thing
+--use whichever is more readable/suits needs best
+filter (<15) (filter even [1..20])
+[x | x <- [1..20], x < 15, even x]
+
+
+largestDivisible
+
+
+sumDifference 3 7
+
+
+takeWhile (/='w') "elephants know how to party"
+
+sumOddSquares
+
+--length [1..4]
+collatz 13
+collatz 10
+collatzLength
+
+
+--LAMBDA FUNCTIONS
+map (\(a,b) -> a+b) [(1,2),(3,5),(6,3),(2,6),(2,5)]
+
+
+--FOLDS
+foldl (+) 0 [1..10]
+foldl (*) 1 [2..20]
+foldr (\x y -> x/y) 2 [6..10]
+sum' [1..10]
+addThree (foldl (*) 1 [1..5]) 2 3
+map' (+1) [1..5]
+
+elem' 1 [1..5]
+
+maximum' [11,6,4,77,5,34,7,543,7,0]
+
+reverse' [1..10]
+
+last' [1..10]

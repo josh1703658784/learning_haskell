@@ -1,0 +1,9 @@
+name: Chapter04
+version: 1.0
+cabal-version: 1.6
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+Executable Chapter04
+  main-is: Chapter_04.hs
+  buildable: True
