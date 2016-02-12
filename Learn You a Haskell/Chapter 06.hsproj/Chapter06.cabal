@@ -9,3 +9,5 @@ Executable Chapter06
   buildable: True
   build-depends:
       base -any
+  other-modules:
+      Geometry
