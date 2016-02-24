@@ -12,10 +12,30 @@ map (Circle (Point 10 20)) [5, 10, 15]
 nudge (Circle (Point 34 34) 10) 5 10
 
 
-let me = (Person "josh" "sarv" 22 5.9 "724-636-0485" "vanilla")
+let me = (Person "josh" "sarver" 22 5.9 "724-636-0485" "vanilla")
 
 age me
 height me
 
 me
 
+Just "hello"
+Nothing :: Maybe Int
+Nothing
+--Just 10 :: Maybe Double
+
+tellPerson me
+
+vPlus (Vector 1 2 3) (Vector 4 5 6)
+
+--True >= True
+
+Monday < Wednesday
+minBound :: Day
+succ Monday
+pred Tuesday
+[Monday .. Thursday]
+[minBound .. maxBound]::[Day]
+
+inPhonebook "josh" "911"
+inPhonebook "josh" "7246460485"
