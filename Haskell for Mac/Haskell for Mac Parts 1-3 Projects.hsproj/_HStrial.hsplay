@@ -66,3 +66,16 @@ repeatN 5 9
 divide 5 10
 
 suffixes "Hello"
+
+
+fact 5
+
+enumFromTo 1 10
+
+
+length . countOdds $ [1, 6, 9, 14, 16, 22]
+
+
+removeOdds [1..10]
+
+

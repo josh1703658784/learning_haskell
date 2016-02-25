@@ -1,0 +1,16 @@
+-- Haskell Playground 1.0
+import Graphics.SpriteKit
+  hiding (Path)
+
+
+drawPicture 2.0 [(lightgreen, house), (red, door)]
+
+
+
+
+
+
+let myLine = ((400,400),(420,500))
+
+
+drawPicture 2.0 (spiralRays (pi/40) 1.02 400 red myLine)

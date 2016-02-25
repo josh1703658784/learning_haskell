@@ -1,5 +1,7 @@
+
 module Examples where
 import Data.Char 
+import Prelude hiding (enumFromTo)
 
 --FIBONACCI LIST
 fib' :: [Int]
@@ -232,3 +234,34 @@ addMult x y = (x+y, x*y)
 type Point = (Int, Int)
 origin :: Point
 origin = (0, 0)
+
+
+
+--3. RECURSIVE FACTORIAL
+fact :: Int -> Int
+fact 1 = 1
+fact n = n * fact (n-1)
+
+
+--4. ENUMFROMTO
+enumFromTo :: Int -> Int -> [Int]
+enumFromTo m n | isEqual = [m]
+               | otherwise = m:enumFromTo (m+1) n
+               where isEqual = (m==n)
+
+
+----5. Count number of odds
+countOdds :: [Int] -> Int
+countOdds [] = (1)
+countOdds (x:xs) | isOdd = (1+):countOdds xs
+                 | otherwise = countOdds xs
+                 where isOdd= odd x
+                 
+
+
+--6. Removes odd
+removeOdds :: [Int] -> [Int]
+removeOdds [] = []
+removeOdds (x:xs) | isOdd = removeOdds xs
+                 | otherwise = x:removeOdds xs
+                 where isOdd= odd x

@@ -1,0 +1,15 @@
+name: Part4
+version: 1.0
+cabal-version: 1.6
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+Executable Part4
+  main-is: Fractals.hs
+  buildable: True
+  build-depends:
+      base -any,
+      JuicyPixels -any,
+      Rasterific -any
+  other-modules:
+      LineGraphics
