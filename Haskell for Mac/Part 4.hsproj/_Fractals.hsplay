@@ -13,4 +13,8 @@ drawPicture 2.0 [(lightgreen, house), (red, door)]
 let myLine = ((400,400),(420,500))
 
 
-drawPicture 2.0 (spiralRays (pi/40) 1.02 400 red myLine)
+drawPicture 2.0 (spiralRays (pi/40) 1.02 255 red myLine)
+
+
+
+drawPicture 2.0 (spiral (pi/3) 1 100 myLine)
