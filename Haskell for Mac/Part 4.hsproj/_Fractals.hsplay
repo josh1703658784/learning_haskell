@@ -3,18 +3,28 @@ import Graphics.SpriteKit
   hiding (Path)
 
 
-drawPicture 2.0 [(lightgreen, house), (red, door)]
+--drawPicture 2.0 [(lightgreen, house), (red, door)]
 
 
 
 
 
 
-let myLine = ((400,400),(420,500))
+let myLine = ((300,200),(700,600))
 
 
-drawPicture 2.0 (spiralRays (pi/40) 1.02 255 red myLine)
+--drawPicture 2.0 (spiralRays (pi/40) 1.02 255 red myLine)
 
 
 
-drawPicture 2.0 (spiral (pi/3) 1 100 myLine)
+
+
+
+
+
+
+
+
+
+
+drawPicture 1.0 (spiral (pi/2) 1 600 myLine)
