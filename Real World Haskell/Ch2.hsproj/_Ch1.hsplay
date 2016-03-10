@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+lastButOne [1..10]
+lastButOne [1]
+

@@ -1,0 +1,17 @@
+-- Haskell Playground 1.0
+let book = Book 1234 "Learn You le Haskell" ["FName LName"]
+
+let t = "to" :: CashOnDelivery
+
+toList . fromList $ [1..10]
+
+
+--Cons 1 it
+--Nil
+--Cons 0 Nil
+--Cons 1 . Cons 2 $ Cons 3 Nil
+--fromList $ [1..10]
+
+
+Cons
+--List

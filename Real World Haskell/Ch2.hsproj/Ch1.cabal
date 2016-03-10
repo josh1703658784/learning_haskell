@@ -1,14 +1,11 @@
-name: Chapter07
+name: Ch1
 version: 1.0
 cabal-version: 1.6
 build-type: Simple
 license: AllRightsReserved
 stability: experimental
-Executable Chapter07
-  main-is: Chapter_07.hs
+Executable Ch1
+  main-is: Ch1.hs
   buildable: True
   build-depends:
       base -any
-  other-modules:
-      More_07
-      Shapes
