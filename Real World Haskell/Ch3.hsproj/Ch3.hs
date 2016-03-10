@@ -7,7 +7,7 @@ type CashOnDelivery = String
 type Invoice        = String
 
 --type BookRecord = (BookInfo, BookReview)
-
+--pg 60
 data BookInfo = Book {
                 identifier :: Int
                 ,title      :: String
